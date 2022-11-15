@@ -3,7 +3,16 @@ import axios from 'axios';
 
 function App() {
   const [batches, setBatches] = useState([]);
-  
+
+  function fetch() {
+    axios.get('/batching')
+      .then((response) => setBatches(response.data))
+  }
+
+  useEffect(() => {
+    fetch();
+  }, []);
+
   return (
     <div>
       <Search />
