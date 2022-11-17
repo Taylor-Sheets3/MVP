@@ -1,6 +1,8 @@
 .App {
   color: black;
   background-image: linear-gradient(white, #C0C0C0);
+  min-height: 100vh;
+  font-family: 'Inconsolata', monospace;
 }
 
 h1 {
@@ -16,13 +18,19 @@ h1 {
 }
 
 .add-btn {
-  background-color: #d25b5b;
+  background-color: #32527B;
   border-radius: 5%;
-  color: black;
+  color: #FAF9F6;
   height: 3em;
   width: 12em;
   margin-bottom: 3%;
   cursor: pointer;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .Cards {
@@ -30,6 +38,12 @@ h1 {
   width: 30%;
   border: 1px solid black;
   background-color: #FAF9F6;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .row1 {
@@ -55,10 +69,11 @@ h1 {
   margin-left: 20%;
 }
 
-.del-btn {
+.del-btn, .modalSubmit {
   margin-right: 15%;
   border-radius: 5%;
   color: black;
+  background-color: #FAF9F6;
   cursor: pointer;
 }
 
@@ -77,6 +92,7 @@ h1 {
 }
 
 .modal-container {
+  font-family: 'Inconsolata', monospace;
   background-color: #FAF9F6;
   border-radius: 20px;
   padding: 1em;
@@ -84,6 +100,12 @@ h1 {
   flex-direction: column;
   color: black;
   width: 30%;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .modal-header {
@@ -116,4 +138,8 @@ h1 {
 
 .flavor-select, .case-select, .tank-select, .sanitation-select, .qa-select {
   margin-left: 3%;
+}
+
+input, select {
+  background-color: #C0C0C0;
 }

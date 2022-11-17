@@ -7,15 +7,15 @@ function Cards ({ batch, handleDelete }) {
   return (
     <div className='Cards'>
       <div className='row1'>
-        <div>Batch number: {id}</div>
-        <div>{product} {case_size}</div>
+        <div>Batch number: <b>{id}</b></div>
+        <div><b>{product}</b> {case_size}</div>
       </div>
       <div className='row1'>
         <div>Date: {date_made.slice(0, 10)}</div>
         <div>Time: {date_made.slice(11, 16)}</div>
       </div>
       <div className='row1'>
-        <div>Units: {units}</div>
+        <div>Units: <b>{units}</b></div>
         <div>{tank}</div>
       </div>
       <div className='row2'>
@@ -23,7 +23,7 @@ function Cards ({ batch, handleDelete }) {
         <div>Sanitation: {sanitation}</div>
       </div>
       <div className='row3'>
-        <div className='qaRow'>{qa ? 'Pass' : 'Fail'}</div>
+        <div className='qaRow'>Testing: <b>{qa ? 'Pass' : 'Fail'}</b></div>
         <button
       className='del-btn'
       type='button'
