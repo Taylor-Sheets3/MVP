@@ -9,10 +9,10 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(express.json());
 
 app.get('/batches', (req, res) => {
-  controllers.getBatches(req, res);
+  controllers.getBatches(res);
 });
 
-app.post('/batches', (req, res) => {
+app.post('/batches/', (req, res) => {
   controllers.postBatches(req, res);
 });
 
@@ -22,6 +22,10 @@ app.put('/batches/*/reviewed', (req, res) => {
 
 app.put('/batches/*/tested', (req, res) => {
   controllers.tested(req, res);
+})
+
+app.delete('/batches/*', (req, res) => {
+  controllers.delete(req, res);
 })
 
 app.listen(process.env.PORT);

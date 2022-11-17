@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx webpack --watch",
-    "server-dev": "npx nodemon -w ./server ./server/index.js"
+    "server-dev": "npx nodemon --watch server server/index.js"
   },
   "repository": {
     "type": "git",
