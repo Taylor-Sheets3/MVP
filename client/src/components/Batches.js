@@ -8,12 +8,14 @@ function Batches ({ batches, handleDelete }) {
   return (
     <div className='Batches'>
       <button
+        className='add-btn'
         type='button'
         onClick={() => {
           setOpenModal(true);
         }}
       >Add Batch +
       </button>
+      <br />
       {openModal ? <Modal
         closeModal={setOpenModal}
       /> : ''}

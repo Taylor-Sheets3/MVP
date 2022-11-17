@@ -1,3 +1,119 @@
+.App {
+  color: black;
+  background-image: linear-gradient(white, #C0C0C0);
+}
+
 h1 {
-  color: red;
+  text-align: center;
+  color: black;
+  size: 3em;
+}
+
+.Batches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-btn {
+  background-color: #d25b5b;
+  border-radius: 5%;
+  color: black;
+  height: 3em;
+  width: 12em;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.Cards {
+  border-radius: 5%;
+  width: 30%;
+  border: 1px solid black;
+  background-color: #FAF9F6;
+}
+
+.row1 {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row2 {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row3 {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.qaRow {
+  margin-left: 20%;
+}
+
+.del-btn {
+  margin-right: 15%;
+  border-radius: 5%;
+  color: black;
+  cursor: pointer;
+}
+
+.modal-background {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal-container {
+  background-color: #FAF9F6;
+  border-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 30%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-close {
+  display: flex;
+}
+
+.modalBtn {
+  background-color: #FAF9F6;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.modal-div, .toa {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.modal-div2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.flavor-select, .case-select, .tank-select, .sanitation-select, .qa-select {
+  margin-left: 3%;
 }
